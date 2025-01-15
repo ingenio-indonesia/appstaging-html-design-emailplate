@@ -1,1 +1,1 @@
-# appstaging-html-design-template
+# appstaging-html-design-emailplate
