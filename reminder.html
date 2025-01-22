@@ -1,171 +1,195 @@
 <!DOCTYPE html>
 <html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Email Ingenio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet" />
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email Ingenio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet" />
-</head>
+	<body style="font-family: 'Poppins', Arial, sans-serif">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td align="center" style="padding: 20px">
+					<table border="0" cellspacing="0" cellpadding="0" style="max-width: 600px; border: 1px solid black">
+						<!-- HEADER -->
+						<tr>
+							<td style="padding: 20px 20px 0px 20px">
+								<img
+									src="data:image/png;base64,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"
+									alt="header"
+									title="header"
+									style="width: 46px; max-width: 46px; display: block"
+								/>
+								<h1 style="margin-bottom: 0px">Pengingat, try out akan segera dilaksanakan</h1>
+							</td>
+						</tr>
 
-<body style="font-family: 'Poppins', Arial, sans-serif">
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-            <td align="center" style="padding: 20px">
-                <table border="0" cellspacing="0" cellpadding="0" style="max-width: 600px; border: 1px solid black">
-                    <!-- HEADER -->
-                    <tr>
-                        <td style="padding: 20px 20px 0px 20px">
-                            <img src="data:image/png;base64,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"
-                                alt="header" title="header" style="width: 46px; max-width: 46px; display: block" />
-                            <h1 style="margin-bottom: 0px; margin-top: 0px;">REMINDER🔔</h1>
-                            <hr style="background-color: #f8ca2b; height: 2px;">
-                        </td>
-                    </tr>
+						<!-- FIRST CONTENT -->
+						<tr>
+							<td style="padding: 20px 20px 0px 20px">
+								<b style="color: #f8ca2b">Halo Sobat Ingenio,</b>
+								<br /><br />
+								Hari yang ditunggu sudah semakin dekat! 🎉 Tryout [Nama Tryout] akan segera dilaksanakan. Berikut adalah detail pelaksanaannya:
+							</td>
+						</tr>
 
-                    <!-- FIRST CONTENT -->
-                    <tr>
-                        <td style="padding: 20px 20px 0px 20px">
-                            <b style="color: #f8ca2b">Halo Sobat Ingenio,</b>
-                            <br /><br />
-                            Hari yang ditunggu sudah semakin dekat! 🎉 Tryout [Nama Tryout] akan segera dilaksanakan.
-                            Berikut adalah detail pelaksanaannya:
-                        </td>
-                    </tr>
+						<!-- SECOND CONTENT -->
+						<tr>
+							<td>
+								<br />
+								<ul style="margin: 0px">
+									<li>
+										<b>Tanggal: [Tanggal Tryout]</b>
+									</li>
+									<li>
+										<b>Waktu: [Jam Pelaksanaan]</b>
+									</li>
+									<li>
+										<b>Kode Tryout: [KODE TRYOUT]</b>
+									</li>
+								</ul>
+								<br />
+							</td>
+						</tr>
 
-                    <!-- SECOND CONTENT -->
-                    <tr>
-                        <td>
-                            <ul
-                                style="margin-block-start: 10px; margin-bottom: 0px; margin-inline-start: 20px; padding-inline-start: 20px;">
-                                <li>
-                                    <b>Tanggal: [Tanggal Tryout]</b>
-                                </li>
-                                <li>
-                                    <b>Waktu: [Jam Pelaksanaan]</b>
-                                </li>
-                                <li>
-                                    <b>Kode Tryout: [KODE TRYOUT]</b>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
+						<!-- THIRD CONTENT -->
+						<tr>
+							<td style="padding: 0px 20px">
+								<a href="https://appstaging.ingenio.id" target="_blank" style="display: grid; background-color: #f8ca2b">
+									<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+										<tr>
+											<td align="center" valign="middle" style="padding: 10px 0px">
+												<a target="_blank" style="text-decoration-color: #f8ca2b; color: #000000; font-weight: bold" href="https://appstaging.ingenio.id"> Ingatkan lagi </a>
+											</td>
+										</tr>
+									</table>
+								</a>
+								<br />
+								Tips Persiapan Tryout:
+							</td>
+						</tr>
 
-                    <!-- THIRD CONTENT -->
-                    <tr>
-                        <td style="padding: 0px 20px 20px 20px">
-                            <br />
-                            <a href="https://appstaging.ingenio.id" target="_blank"
-                                style="display: grid; background-color: #f8ca2b">
-                                <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
-                                    <tr>
-                                        <td align="center" valign="middle" style="padding: 10px 0px">
-                                            <a target="_blank"
-                                                style="text-decoration-color: #f8ca2b; color: #000000; font-weight: bold"
-                                                href="https://appstaging.ingenio.id"> Ingatkan lagi </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </a>
-                            <br />
+						<!-- FOURTH CONTENT -->
+						<tr>
+							<td>
+								<ul>
+									<li>Pastikan koneksi internet Anda stabil.</li>
+									<li>Siapkan alat tulis untuk catatan tambahan.</li>
+									<li>Login ke akun Ingenio Indonesia beberapa menit sebelum waktu pelaksanaan.</li>
+									<li>Masukkan Kode Tryout saat diminta untuk memulai.</li>
+								</ul>
+							</td>
+						</tr>
 
-                            <!-- FOURTH CONTENT -->
-                            Tips Persiapan Tryout:
-                            <ul
-                                style="margin-block-start: 10px; margin-inline-start: 10px; padding-inline-start: 10px; list-style-type: decimal;">
-                                <li>
-                                    Pastikan koneksi internet Anda stabil.
-                                </li>
-                                <li>
-                                    Siapkan alat tulis untuk catatan tambahan.
-                                </li>
-                                <li>
-                                    Login ke akun Ingenio Indonesia beberapa menit sebelum waktu pelaksanaan.
-                                </li>
-                                <li>
-                                    Masukkan Kode Tryout saat diminta untuk memulai.
-                                </li>
-                            </ul>
-                            Kami percaya Anda bisa memberikan yang terbaik! Jika ada pertanyaan atau kendala, jangan ragu untuk menghubungi kami.
-                            Semangat belajar dan selamat mencoba! 🚀
-                            <br><br>
-                    <b>INGENIO</b>, It's Not That Hard, Seriously!
-                    <br />
-                    With Love, <b>INGENIO INDONESIA</b>
-            </td>
-        </tr>
+						<!-- FIFTH CONTENT -->
+						<tr>
+							<td style="padding: 0px 20px 20px 20px">
+								Kami percaya Anda bisa memberikan yang terbaik! Jika ada pertanyaan atau kendala, jangan ragu untuk menghubungi kami. Semangat belajar dan selamat mencoba! 🚀
+								<br /><br />
+								<b>INGENIO</b>, It's Not That Hard, Seriously!
+								<br />
+								With Love, <b>INGENIO INDONESIA</b>
+							</td>
+						</tr>
 
-        <!-- DIVIDER -->
-        <tr>
-            <td>
-                <hr color="#000000" size="1" style="margin: 0px" />
-            </td>
-        </tr>
+						<!-- DIVIDER -->
+						<tr>
+							<td>
+								<hr color="#000000" size="1" style="margin: 0px" />
+							</td>
+						</tr>
 
-        <!-- FOOTER -->
-        <tr>
-            <td style="padding: 20px 20px 20px 20px; line-height: 0px">
-                <table border="0" cellpadding="0" cellspacing="0" align="center">
-                    <tr>
-                        <td align="center" valign="middle" style="padding: 0px 5px">
-                            <a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
-                                <img alt="wa" title="wa" width="24" height="24"
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ/SURBVHgB7VQ9aFNRFP5uGlHagAEhFgWNpbr4k0wuRkxc6lAhxUJ1ShSlQxVtl051cOoWQVyVjIKhAR10SkIVRMTE0jpItelSY0RIMJGWxl7POe9Fk2ffS+ncD+5779537vede34usIMOUJ0MwrPRMJQrhg1Nb/jN5QJtLULpdDY0k9yWQDgT9cOtHvOnx92D4N7j6N3tA38v1pewWCuitFZmhiLWdSQbSRe3LEDkQSLPEJn30oFBDNNgYitelDNILj8xhVzxbCiV7Cggnu9SGfLWnzh5T7x2ApOPz93ldwUuOsmZdKH1v+u/HW5XwtPV85e81vglww5skzgltl5sSEhhKyAJhY7GDo3IxtLad9zIT+DKu1E4gW1jh0f4M2hw2AhQwGL8Cu07LdPXP95ICGqNOgrVBScNXPBFjDxp3LEX0CrYrBYrJJEdII4pdc5BQHt79/wjH/CdF694sIedYDrmtRewgIk5Hxyih18eYTtwt82UqpRW20PBPfC5XsTTleeo/a6LICdr6uM0hg8OItASUm5AQsVeADpHyQyyx62NNXn0Jjxd3SLCyeb/PKY/PSAHLmKs76ohQN1NYc61MlpDlOZHioisGOu7hsljt0SIyRnsxMB+IzcvqaulEFxqBk4Izw7lr7+f0E74uvpN5yvz+ud6zZyX9eW3ozr8amjJyufeRINK9QScwDFvxp2bcXxuyrgqGjriKNDswn6PX45cqM6jv+eIWa7dbRv5+kitPDOS36gL+WY3qrII3Kel2y1LXBFS19KAZo80O9vMRY7I43bXtSVEKiAboDlRH7Jn01k5lUacqwvVhYBpuEzJzJBdkm2wVdBV7cUOLPgDiHcvvFstFbQAAAAASUVORK5CYII=" />
-                            </a>
-                        </td>
+						<!-- FOOTER -->
+						<tr>
+							<td style="padding: 20px 20px 20px 20px; line-height: 0px">
+								<table border="0" cellpadding="0" cellspacing="0" align="center">
+									<tr>
+										<td align="center" valign="middle" style="padding: 0px 5px">
+											<a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
+												<img
+													alt="wa"
+													title="wa"
+													width="24"
+													height="24"
+													src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUhSURBVHgB7VhPaBxVGP9mk9JAIkZL09CDbNpQrH/I9mA9ZAu7vdiDYtIWpKdaQSioiHioB0tTe2kPUqsVBEGTkxYiWWgOxkN2SiL4D5Kiomi1m4Jlk1hsIJHEpPv8fm92ZmemM+/Nzo72sj+Y3fd2Z+Z9v/f9ed/3ETXRRBNN3EsYlBByxYFOaqWjZKQyJESGf0rz1Vn9+zZfJV6Or4pJKbpi9hdmKQE0TCA3NZDj15zCkOrDLK/+jpkdG6EGEJtAA4L7JSjx51BcIrEI5KYOsuBiyP975v5HqX/Lk9S9uYt6O9LyGyivLVB5dZGurVynq0s/0PStbwIkMYZpvXLazBdK9F8RsOzcGCPfrh996Dk6sC3vCKwDCM0u/Ugjc5fk2CVNidZFvh4SkQlI4TcZRRKUsX/Djp/Y9Upkwf2A8CM3LtHn80W3RHWRiE5g6iDvvBiw54e2P0Mv7zhGSWD05ji9//tH5JIKJPYwidu6Z1MUAVWbd4SHySQlPHB4+9NSkw4Eh2DLVLVo0d3AppNmmgV7DuGf5ytp9Lb3UHdbF31Zc/B0+tjDS6WPf/5K9ZxeA62p8/YQCwQJf5UdEgt7HDIGDnTlpTYcGMYp6XsKKDVgxXo6a88/3PM2dbS2e+459+tFusj2O/nnNM0zgf1bs9QIHrlvF10uf0H/VNYxbeMtXmMtmGH3qzVgcGpQRVCYnFgocgSZdOYIjcsbK9QIsEEeLZDxqup+NQFhOI77VNf+u/4e/WPcM4fwn90cp0ZxiAm4NN1ZtYRAhBKoPiTtD7aPmO8HTlY/RhMgAOGzW/Z6xAm7V6WBnD0IEj4M0EKjZmSt+Vht4jo8/VAQSPXZI4Q47SJVIMz6HT0O+tybljL6wu5TEBBO+NoZSsCrGag9qTOio8W1CULWFoEIJyBEmjSAs7kjUxJRyEZULUZKJVSLuFMACH/yp7P0fyKcgIHyz4JqV2FG7rgt02TOMBtFVE2qTGjOHq7cUb/spR0veBx6mAl4sksXXvv+JJ/e72nTjvLaYm1iVW2BCCeQIqfonuUqSoczu094ohXOgyPfHXcnZ1Iz0BDy/yPfHlcS+c19xgiao1AxwyBqBAJLQB/gD+cff8tDory6QG+yT7w487oUdthnWjaRoANx+tbXtYkhClQ3gQ1JQBYUsEfsXBQSSPi8uYx1YnuqLh/8ORbMx7NpBplhz4YSsKoh4XQKRm58SlEBn4haaiJN8YfMCVeCCPtX9ZB0YdRRHTQQRQs2kNt/8sQHkkhvezrwHkQwmJ0b2H2ftoZIAW1NnJsaxNtyGOOkPbP7DYoDOCvMYn7Vclq0X4JyLPiKQwC7nx3rUb23lXQwRInTajns3ryN4gLm5PcNP+7qUGh2H9ATICNnj/q9KW6imFiY9EUpccHMFrTdOiUBrkczdiIFR6snra4H2HmP8LKtot99QK2BTWz7whr6HXG+atPQSvzG1iKd++Vdb3CoNba0PSFATUAYz9pDpAqoga8tX5eC2ycoCnrUy4e50bUzJNr4sbzxN5eel+Vp7cl5DD571sVgYq1FjkB/Ua3HrwVievbBvZIsTK67basjME5lpCQ41ILDsbjAh+dQ1J3XEqi2z4uKZ7EQcpQ+agxX0Ok29xVMigHVQTYQsthpvvK0IXrMfWMZfHPmGqe3j3fl+R25uMIDCg0Mzlj/C5NwInNupFKv7KC1sNMbuLiGFfQAuc0vZcxQpTInk8Q7VKjXVOqGrqXXRBNNNJEI/gWpthmcApxxaAAAAABJRU5ErkJggg=="
+												/>
+											</a>
+										</td>
 
-                        <td align="center" valign="middle" style="padding: 0px 5px">
-                            <a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
-                                <img alt="www" title="www" width="24" height="24"
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALYSURBVHgB3VXNT1NBEP/tK1TEqiAhwUikFAyCB+VUb3qQg4mxTQgnLy0eTfTmSWNN/Ac0HsUnB7wYQhs5CRcSD+AFLlIrX63BhMQoH8UPin3rzrzu89EPNEYP8kva3Te7M7+Z2Zld4H+H2G3Rby7VefAtDMsISYEzJCoszQiJNIQnvtDfPvhHBP5HqbBhCBOQddgdaQFPrBKRUU4YMOfuGAZGyHizr9qRT/S18u+Qd4eaXyL/hHR+i4A3SitGRm4HGxFs2s/y6Kl6EBn9aE4INtXiltrDUDrlSHYQtA28jWjjQxeb0XPch+H5DV6LdP3MVKSrnqOYWvmCriM1eB5qsaNSun4zFa5IIA3JHtzobmDFyZWvLO9p8cGdKjLWe+IwzyeZZB+uKx02KGFScZQQ2N7DT4bIQ8JYZtMmUJEUQ8vGC3uiSuesSplCncfaDpeJQIToX3tCeL/5nUfysBidBdnspy1HdqHlAI+WsEoJpJD+YmPLmzke3enRoDRp+XLBER2VgDjtuK0ngccpib+Ixf4Otm3gH6PKmQnV+uqQJ/oCKnRb3D00j42chZkr7TjoLfXl3LMllZ5taJ2kOo9LiQwtzeg9jpawDBaOv8s6Bpp9Xh7JSDGIWMu1Q/rAJWSmhEAVcIKGF5nPjqizwSZIuipFQ8vcRfFg+mPBqBgpIcijOq7iWKPuNGdXbYKCsm44N4bn1nkMHuXah/l6VUeUXujvGCwhSEdb1ywho9oT8rC33e7WsUwWWZUSN6Z0l6vSpL33Xn3gb1U6Mfc+j/tjLfHwTf3la2LLwvmnqXU01nqQywML6zl4q4TuVPZ2dCnLfXBM5f/myxVs5SXdRXcXr56877ZZ9j0IDCRjEMaOm5EaazTkBx0hVQodMsk2dGRsvDNWbKvig9NmJiMSikQ6r1gFCE5tOtoRL7uKX4CI+MkEWtVu+wqQMqOug2kYViKPmjidH/YsfgBnhxfKDsQrdAAAAABJRU5ErkJggg==" />
-                            </a>
-                        </td>
+										<td align="center" valign="middle" style="padding: 0px 5px">
+											<a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
+												<img
+													alt="www"
+													title="www"
+													width="24"
+													height="24"
+													src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAWWSURBVHgB7VlNbBtFFH6zpk0oSZs2QgoQGucH2qSHhFNygVqCHHpABUW9lEPs9MIpTu9IDVcuxFw4YZsDXFBUIZAqURDJjZyaHhpDiFunNdBLW+eHAnG9w7x115l5M+vddYyo1HxSFO/sm5n35v3OW4B97OPpBoMmIZrJxSyIDDObxziDEbF0BwDveLxNSfwuMA4FDnDdtuyFQmJwAZqAPQkQzdzqsOBREjif2WU2MAqMsYUKVD4UwhSgQTQkQJXx8qUq43uHECTbqCChBehPr01ysOcaOHE/FBhEZvNTA5+HmWSFIe7LrH7MoZINwvzEK0cgn3jV+UucOgoBEMW1cQ8IgUAaQJOJ8PJlDjxG33W3HXD+F7fLytgXZ7pr7zZ3bHj763WF5vBBS/xFlLEaU45vHHi3kOgtgQ8CacDEPDKQfK0TPn3zRY2JaTHuMu/SfvR6l0KDQuEYrkHBOY9FoHwZAsBXgKrZqMy7Jzw90gnZGw+AvpsYOKytM9r1LIx1HVLGUtfuOWssnutVBHaFCGJOdQXo/2w1TiONy/zQsVbneenuX8qcacOJer1buvvQmU9NDnalmOlP/zIJjQggElOUW/wSGJh3N5pf29Rs33T6LkxauHp727h2TQaAOfRBCCuAyKoizkNUHqMbXF3fVhl84RD4IU4i0vyvG7XfuDb6FPqMhGrO8eTTADx9ob64PEYdE4EmIKPe6btALcgMojPLZjh0rEUPu8KUvLRgmQcjmukkR1T7zd3/x9ncBTKFzPkB6cZ72pSxn8hBxIeOaodl2TszZl6NUKOOyTFXhAAygpiPi0FxyjKW/lADAQoZP0UOnEHStJYmAFaVsu3jYibTyBEBhghT9TB+vI2s9bdGMzFwRPMFhzcCTQDLthSi8Z52MCF3TxVgMIQAaB7UD4rbjxQak6lZNhuha2kCMLCG5Wcvu5bt32UqDLCMkLG1U9FoaMgV94wYpdEE4IxH5Wcv09gkG7YThvxABTbVRFSrDNgwpdGKub706oP/oFRuFko3p04oMdYQhZ5Y5hEab6HuA08iDAIw3xr8f4TG2zMaCeMlkQdqqvr2bI8xRJ7+6pbieIvn+oRj6st54b0rRSUDf3nmZS3iYYlx/sodeahA19HDqG0tq4s8BBOChMF6oGGYJC0HNDKJe8k6pdHDKFQW5eeV+ztgwkvktGlm9sMKyb6mPEKrXcbZMqXRBLAtvqwusiVO16Zk0N2ubrgZQgNUWDz9doMGqPaxIUZptFnVjtmuI6Oq59c2KJmW4Lw0ZQItBAc7WzUavCwRMyuYunnmMMp5Sn7M3ChpWtArSrOvmEBpxwzlyifivqxAdCrAAKMAtnVwTn5GZ0qvqJd3FEB2PKShBZkX6D16lNQ8yDx1YFt07kxrGQWo9mNULWD3QS+hVdV/f3sL/IDM0/6QHD5/E+9Sy9rpZ73ajp6Z2GYts9QX3v/hd7HB7im/1fOcMue79T/BD/IdGCGX68j8eZEfCApep4/wFAC1YLPKRXms6GxwpyYEXjpkuG0SLyCD6Jwy3MuSyzw1HVFtztZr+tathcTELDUlWQhUv6lZ5QX6DmM/mg+apol53Ds/daJuszdQb7Q/s/ojdsroOHbVxsRdmKR7Y1mAJ/yGKD9kYGuxuFWGrAgQNDMzzhfzF07GwAfBm7uiV2kSAk8Rk5jMADr3N2ePK3S0dnLnGpu7gvmK1fJOkOZuqO8DfemfRXhlySC0CdEa+WD0eec3hkUtsniCp25OnQz84ST8B45MLs7B0rp2ewcrMV65mL+AfhdiFjQA7Nwxbs2KyZPQFPAUhu0gJkOxx498jwVhcDq8RkSO4ZWUbbXONcJ4bRVoEpzPrKKnJBYcFh3lXpE9e5TPrNzeEF2Fa9xiCyIxXW/WZ9Z97ONpx79MzIJ+kJOIZgAAAABJRU5ErkJggg=="
+												/>
+											</a>
+										</td>
 
-                        <td align="center" valign="middle" style="padding: 0px 5px">
-                            <a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
-                                <img alt="yt" title="yt" width="24" height="24"
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEPSURBVHgB7ZTtbcIwEIbfc/I/VjtAKQs0I7RikLYbdAQ6QcUArdQN2AA2YATDAnz8B7/Y5AuUEAXIL+CRLvGdfH7ls+6AO1eP7DsM8Qqqd5Cxc3WyQ3S+roKcpif5/xLCgawxLgkQ6CBQBm0g9i0TUXkwVF9oC1+FlEKAfEFbEHGFgOjanN8/4KmDRkjFm1Epw0DxmFlrE+v3yW6XdXudLc4X8GYM7edHrUi5RKcQRRCtT8tpdIP5nPx2JXp8OKtEk1qB8ahJ7TPL+ynMFcR3pMTHbii9Hpojs2xVvIEUwcuhKQvADtEWyg6y5eGw282j4Ad+uJHPaTiqbJwkYem+q9Rzg04mkM3//rC7cwNsAZN15M/LaTe+AAAAAElFTkSuQmCC" />
-                            </a>
-                        </td>
+										<td align="center" valign="middle" style="padding: 0px 5px">
+											<a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
+												<img
+													alt="yt"
+													title="yt"
+													width="24"
+													height="24"
+													src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIYSURBVHgB7ZhBTuMwFIb/5zDS7CZzgmROwMwNimbOwWK4QVlTJC6AVNaAxA04AIKyBqkHAJGegLJDquqHX1OgTQwE4jRe+NskcZ6i9/vZjv0DgUAgEAgE2oM+CuDvSDFBB6RSMJJ5a5pfkC5/jVJUgTlbeBqbLMYv9yB5HoH1EAoZTTB871NvCmCY5CI6NiEdtEuGqd4guVqwCsiTV+dAoYfbYwxlRFiqoazhkdqFP8kLMXS0b3tRqgBLcKTu4SPf9C96XB5K5Qqs4Td8ZRJ1ik1lARyl8BWar34LqCpB3vCyjL9iqUC9ycuHR0CSohn4Z7HFsgrxD9RhcxN8dgbe6cE9Ki61WKJi1CUxle71wDe3YCPIGVzuXIUmESFmSPHVtZthRahUAfesr5tq3DQyP1Yj4BmZHyLE4fxYrQBhbDab8v+P6081YQ2r5OQEtN2diXDFaipwOQD9+wva+u80eaHZCoxGeY+fnsIJjJJ6iwAaoS4yzg/6QL/vtseJHopNziswS3xvz/lQydEVKkBmv834Ot0uGoMoQyE5y2ZOgrylVIGygOn0XRegVcSpKGBbRjP4yrTCoZ5yb+YC3kEDm7Xytq2ijK1CnjgTsv5r/ccmwPonngVqveFHJWgguXzK2FokN7mMU0FK3IrYrFIJng89PDvixQtfS1AFxvLPkuhufpflzyzWYma6d/iRtRgIBAKBQKBNngCmrZ7qnyLL6wAAAABJRU5ErkJggg=="
+												/>
+											</a>
+										</td>
 
-                        <td align="center" valign="middle" style="padding: 0px 5px">
-                            <a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
-                                <img alt="ln" title="ln" width="24" height="24"
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHHSURBVHgB7VXNTsJAEB6QRG9gTPRGygOY4MHEg0j7BvAEJb6A4egJuHkDnoDyJEDwYGJiCyQePNheJIFLIYEEosm6s0ihy7alnvmSsj/z883OzC4ABwQgsrPThQf6W6ZfAsJ5soCABhmouLfdzkt/zv8PAkW4g5qY4BlMqiB52UrHK5G1tMAHE3qK0/UiyrFLvLYcl6F12QL7xgbz2mQfuSVsT71QBf79UtulFFtfY9QgQah+VQlvtxcBGu4LDCQUQfotzQztb5uYC5PN9ZlOjJnB5jjiGh2v5XJfFhLERDy5sxwbe/MetKdtKCVLUB/WwVpYTGbMDSbPxrOODdYKdXlEISRoxDD5mbB5Z9phpH4QEqzbMB6LgzbWoPhZZGvpRIJysrzRo84TsVXTmEtTSMBfNJY/NNKvdKfvg4ABpV5Tm43Mxq/wBJiC/Hs+6EI5ukpf8ZR71gALqQwUaI6bnsYYAOr4BSJMEQ/MPXaJeq6yEYEFLnwUxM6DUrQTKS2mNtKYU0wJFl0eyHulkL8H2H+ebwn2eW1Yc9pUCHy2t8A/dhXwARL4Ol/5cBXtyCVswAvc0xgi7FUN94eDp4/AI83/ExwQBr9iyD7fcYoyDAAAAABJRU5ErkJggg==" />
-                            </a>
-                        </td>
+										<td align="center" valign="middle" style="padding: 0px 5px">
+											<a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
+												<img
+													alt="ln"
+													title="ln"
+													width="24"
+													height="24"
+													src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANISURBVHgB7ZnRahpBFIZPjBAhhUgDvehF1Yv2ro2BXvSiNvoExicIeQLtEyQ+QfUJ1Cdo+gSa5jIFYwPtRaHRQAMJFA00kEAau/9JB3TdmZ1Z16wX+8G4uDu7e87MP2fOzhCFhISEBMmCVq0Dylq/RavgGKfZMrBKyypVyvBRibsDn+mDVatEQbBAFXpL79VVVARpvMDFCbkD97Jp0nyQk8kporipSPPCUK6CqPwu7gFPxKNxii/GKRlL8v/udZe6N13yzAJtyC6pHDCKNtmVLOVX87S5uknJpaRjnaOrIy6N8wa1LltkgNQW1RgYkgYwfOfZDh9NQI/snu6yM1pknG317ABkUnte4xafhvpFncq9srvE/HQA2m6+bEqlYgqMz33NqZ2QOKCKQo6g5f00HuBZzVdNfrYpxg5A734aL8Az8WxTjCQE6Zy8PqFZkjvOOUcoPyRkbyERSUapnlXZAPu1vd97fA3nC98LbChK42I8CpkGBSMH7KEShpZPy2PnKr8qtH+5z+ER12A06Fx1qHJWod51j52B3tGj/dv+2P1bT7bIhKhuRX6hB+2XfpZoY2VyIi0+LVIqlqLEUmLiPSiD2wHpoN0DXiIEWhiSgGTsBkE+ycMkbf/YnnzXov67tHsA+YwXMNmtt9dZPiI34vMvatyj6eX0xD2Dv3qtD4zGgGyigdZRnK7zjG0Za6fzp8NjxR5xkCvpygdo9wDAwByNRJxxWq1YP6/z/0QsQelHaT7immhdkS/1bnr3dazzGMhAJICjDphgNA+gNftv+jRLUocp5572Yx5A19rDpp/IZKjCUzKHXMg0fXYDkkK0kuJXMgfwIlOtqsCznMKpDp4cgJQQGv2QEyIR5gSTyDOKJwcEyHVSX1IT+YwuSDOyx1nPxoOpPykFmKT4u/hxnlOEteU1aV0RDDC5aeP3J6UbcKidbk+kINB74VvBfJXCz0Gsg1PqgVbH2JlqicWG0UxsgsgqAQYqslI/I5dA5QBG1lQr0eIjxnANSGaLI6ox8NH6nW7NxC+G9IneOduiGgNVmhewQi1B7kDm/yZD8Cg3Otw3OA7Y+6BWqmG8cn9Cf4spYjlx90BbTBGrxe/0tphCQkJCguUfbxhOzSpwxf8AAAAASUVORK5CYII="
+												/>
+											</a>
+										</td>
 
-                        <td align="center" valign="middle" style="padding: 0px 5px">
-                            <a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
-                                <img alt="ig" title="ig" width="24" height="24"
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMfSURBVHgB7VRLTxNRFP7uzBRK6bTFR1AMWg0msGLUBFeNNS40wXc0McaIO3fqL6DFhVsfceWKRl3owieJujDAxhhdUI3iQgOtaERBOqXTJ3PneDtg6IAU3PMlN/eekzPnu989Zw6wimXA/uX8gZYwh6/LhD9sMjVgUr1/Bioz4UV5cag0Ay+bPXvjHDUJE+jpRGd8WYI0AhHxcZQ3NIG2bIestYsktbDgtlf5zOfOxTRDKSVhctAQtgsgFt2Pzh4sBcMFzWAKZbQQWak0rRT50Sy93tFPL9BHz/A0XJlTchhr5IhUZ6H+4W2wgA/LoZTQ8X5nDBOxD2h/0IGaABNPwroqYxQHQUAOslAILLjFkYj0DLKxPhTjCSCwDi5tu6hQGDydR2loBLqIaY50wLuVgQ8Vw0sSkE/SpA0NjuRW4ivSe0+hlEyJAquYLbSKyegDNA90o7W/C26tyY71tXtgDP0OOC5daTC/DNboJCjs2wcp8Qlq93k0Tb1E89QTrL96DpRMYmzvZXi0DVACbjtWRkHc2KhC4BNm3Xxj8XsxsPEReK71wBO9JOqiimf0wnfxGNZGToBGkzAev6lIZhOgigJheuT5J/vyHhA+5dxZLESZREEGhcH51pdRtH3VFBBzVzjMjPDJC6LmYkFQmAGXX1m5Avhlhrp5l7R7j62K37m5iKAYuw/xx6BWC1ZVoCxQAAdB6CBYSxC89wrExIB05IxoKyHs+g0UI1dRu7UVnq6DFbfNL1LgAL/VmOIvLjj+Ums8ScXTbVTocFO+tZZyGxXK1UuU3dZCfDTpiP15tJs+4xBVUSDrlBt2tBlr3Iyau8Pgz+/A+vgO+KVD2hGCdOCw6CpHKJg+ISZSJr60gr5NvdajNqLSyufQX/DRMRpHG33HrkeVOZ2zqN7VC7cBGjwJyn7DSkG6jtzx0/b7u5CPOlQtUjG4OcryFKG0JQq7G2SqIEsMvrxlLyqIJ86Ks9hJ2PxtHPRqCFZOwgx5exqgVyewb9Qf1ChnRmBYQZq2tDKZ2EFpDogd9rm8TJ2mSUeKBszpmZhawABW8b/4A3LoxXhXb2nKAAAAAElFTkSuQmCC" />
-                            </a>
-                        </td>
+										<td align="center" valign="middle" style="padding: 0px 5px">
+											<a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
+												<img
+													alt="ig"
+													title="ig"
+													width="24"
+													height="24"
+													src="data:image/png;base64,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"
+												/>
+											</a>
+										</td>
 
-                        <td align="center" valign="middle" style="padding: 0px 5px">
-                            <a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
-                                <img alt="tt" title="tt" width="24" height="24"
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHnSURBVHgB7VW9LwNhGP9dVRg0DsEguIFJBCERg7pBgoEyEDEoCYlFRCw27BIfu5SJGKg/QNQiBnEaC4PcmYg0eRsqkeDOc+21uDpttbb+kud97/14fs/7fOWALBKAS+k2uxOQY5dI6wKcpqCgbBwZhW5AOlXoS9PlHt1eDf38byo2pIFhnBXS1Ij/MuBDQGyBzw3GBGQEphDFpLZGws6WhLRhZcAQDS7ZrGK3JmM8clU3NFUMr9/eZk03lFM44cZ58BohyzzYLMipHF8lBAJjGJ3g4SgV1ou6+o96V9xfr7WiCFfoHKBKGvdDPKAtPrEHEfIjHPr8GBjqiCrlw3bhCL3E9Q0Hr0LTpiFJeJD7voCrayVK3gx+awNNfidKfi1HK8R7oFLMp+eCOnkbitdO0O6i/JH7ttWl7nqB9kWkhccHRqMu2gmcqxRfT+zsexXJP1WNGfEh4qDAiPsNnqtpOv48tAt4ChUaiyCSQLwBlQh5Pqw8g8vG3Qq1wXi9iBzNg71wUlEHRziMSBl6GEZH9K6MNFBVpYa1ZYa9bRlTk3J0/wyih8LnxZ8wPy/QGCMzCRtEBeXGxciAgDQg9KBc/mKIlSNvnxK/EiHvW0yGJOEPh145RomhHuCMpuNuaV6kBvMhi0zgA27tvsDHRaVcAAAAAElFTkSuQmCC" />
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+										<td align="center" valign="middle" style="padding: 0px 5px">
+											<a target="_blank" href="https://appstaging.ingenio.id" style="text-decoration: none">
+												<img
+													alt="tt"
+													title="tt"
+													width="24"
+													height="24"
+													src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARDSURBVHgB7ZlNaBtHFMf/I7mHQprYpfiQUrw9NA24NMrBUNrSbqAfBJdKPuTsLaUlgdI6l9Kb1UuhFGqXtsS0JZbbQj4gWPExBCSFJOSDIJvkkFyi9SE4kZysbEMgKN7Je7srW97I3rVWWSVBPxjP7mrGel/z5u0IaNOmTZtWIvAkMeYURKOFOp/ksLVbRRPoQBiYZg6RSGr1gSzjmYA9sFiUOHGEvSBrWwGfJCXiUiLRiQBE0CL24Gz18tlUQMf9Qeqy1BIIQMsUIJQYsrwWdiEArVQAM1hIfIrznRKfNeyFcLLQBpxCMdH9Sr4T/02W8c77LNI0urp8Z6mWeqBKaf6Wir0D4zh/VkW0ksdiyfA7t+UeqEFB/8Aw9Sl8s3/B76SnSYEqGv4Yg70/yA8FTr6+0eCnIoQ2QPEaEMwDhkFWqiQQkVTziB4qrWjxyQls6Z72mKlfgpr7HtcGs5hHEBpTwJhT0dExDFlR7QdUE5rUSXMWIpqjKy8F0EcbcAbvYQyzExdwb3AKc2UDlU3vyptXYKk0AimHqMGyuFyewM+/lnE41YPbRR6xjeJXo14RvCA9OIBpjcZn6XJoHg/0c7iLilXsSV8b3OYUWCplSHDVvhFpxPpyuKl/h7WxOsuLj3oel/LzbwXSPC5FisTi2M6bGs2XXX7m+lfAtrxqXV+6/Bs+6mcLjaCJkCIcep7hV4s/BRaLmhU2jC18HD4yRBj49cCw06fWEZ7CBplevKQ8gBnqy4q3Amx9W2AdH3wMrBVep/aFxOcUs4I9xFlEpRaaEt4KCBG3Ms71GzqmZzTXp3vorYq94zwXnEIngWUqBaLbEAJ+Qkix/v70ywxs61bhrEH3UrNvxUFahKNrpx5S8ITxLiWkjIFDIj3lzssT9OGgM+jHx4UPB7+1EFs/5nqmw4l3galk/WnRQO+7fvCjgO70bmEUWItVzqw7M/qY0lWatsi9FRBCp1ZvQVZfyjfCTr+377gF5t26B03AWwETJ2kdKFj1RBXtW1ylrCPqC7JUYuEV6/r3Q24FKFOt650mwyXzYtHAzjczcB1Ocfvy5d35r0eOJVbGcqXKNRMfaHE7c3rcPec4+jT7UCueRygs3Eni33/qKmC1/V8VSNjCitBWo/fa4/+z8O5TuVESfNw5lRtHQPwd7rJlOx5O4rU3YiiX18ssOvr3lvH2W3a4/H0YmL+ruseQ9Qf2YbtjebHbKeBCgM85//qTY1c22Ar78GqMLF9wrJ9G6LASvb1pNC78pBP7BimgoIUku/CCAW/BeUySwoaFzzvCs/UDnYfWEkVjZH/Ajos7sEVcQVmn+xexutFxac2b22gSOw9m8O6uXmwdw8rGJw5Q3B9Fkwj0C40TBkP2piRI6GXdrkJNei44z6s1X8WVqkbC62giTfmJyVbEJEUiVPBZxR97g61N3jCz9DxNgmfRpk2bNs8djwB/vrZ3pBk7sQAAAABJRU5ErkJggg=="
+												/>
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
 
-        <!-- COPYRIGHT -->
-        <tr>
-            <td align="center" valign="top" style="color: #999999; font-size: 12px; padding: 0px 20px 20px 20px">This
-                email is sent to
-                you for reminder to you with Ingenio Indonesia Ruko Citraland Blok HH/08, Kunci, Kalisongo, Kec.
-                Dau, Kabupaten Malang, Jawa Timur 65151.</td>
-        </tr>
-    </table>
-    </td>
-    </tr>
-    </table>
-</body>
-
+						<!-- COPYRIGHT -->
+						<tr>
+							<td align="center" valign="top" style="color: #999999; font-size: 12px; padding: 0px 20px 20px 20px">This email is sent to you for reminder to you with Ingenio Indonesia Ruko Citraland Blok HH/08, Kunci, Kalisongo, Kec. Dau, Kabupaten Malang, Jawa Timur 65151.</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
 </html>
